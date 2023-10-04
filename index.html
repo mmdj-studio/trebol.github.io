@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Proyectos</title>
+    <style>
+        /* Reset de estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales de la página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+        }
+
+        /* Estilo para elementos de lista */
+        li {
+            list-style: none;
+        }
+
+        /* Estilo para imágenes que ocupan todo el ancho */
+        img {
+            max-width: 100%; /* Cambiamos "width" por "max-width" para que las imágenes se ajusten correctamente */
+            height: auto;
+            display: block; /* Para evitar espacio adicional debajo de las imágenes */
+            margin: 0 auto; /* Centramos las imágenes horizontalmente */
+        }
+
+        /* Encabezado de la página */
+        .header {
+            text-align: center; /* Centramos el texto horizontalmente */
+            background-color: #ff0000; /* Cambiamos el color de fondo */
+            color: white;
+            padding: 20px;
+        }
+
+        /* Barra de navegación */
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ff0000; /* Cambiamos el color de fondo */
+            padding: 15px;
+            overflow-x: auto; /* Permite desplazarse horizontalmente si es necesario en pantallas pequeñas */
+        }
+
+        .nav-item {
+            flex: 1; /* Hace que los elementos ocupen espacios iguales en la barra de navegación */
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            transition: 0.5s;
+            color: white;
+        }
+
+        .nav-item:hover {
+            background-color: black;
+        }
+
+        /* Secciones de información */
+        .informacion {
+            display: flex;
+            flex-wrap: wrap; /* Permite que las secciones se ajusten automáticamente en filas en pantallas pequeñas */
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .seccion {
+            background-color: white;
+            flex: 1; /* Hace que las secciones ocupen espacios iguales en la fila */
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px; /* Añadimos espacio entre las secciones */
+        }
+
+        /* Integrantes */
+        .integrantes {
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px; /* Añadimos espacio en la parte superior */
+            margin-bottom: 20px; /* Añadimos espacio en la parte inferior */
+        }
+
+        .integrantes__op {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        /* Estilos específicos para pantallas más anchas (640px o más) */
+        @media (min-width: 640px) {
+            .integrantes__op {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .nav {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            PROYECTO DE LA FERIA DE LA TECNOLOGÍA
+        </h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">Desarrollo</li>
+                <li class="nav-item">Objetivos</li>
+                <li class="nav-item">Empresa</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="informacion">
+            <div class="desarrollo seccion">
+                <h3>Desarrollo del juego</h3>
+                <div>
+                    <p>Este proyecto fue desarrollado en el lapso de dos meses en los que se vino trabajando el juego.</p>
+                    <p>Para el desarrollo del videojuego se utilizo el motor grafico UNITY que es gratuito y nos permitió hacer realidad nuestro juego,ademas de ser la mas recomendada por muchas otras personas.</p>
+                    <h5>ROLES</h5>
+                    <p>El diseño de personajes fue hecho por Matias Arias Uribe y Jhony Alejamdro.</p>
+                    <p>El codigo y en general el juego, el encargado fue Miguel Angel Montoya.</p>
+                </div>
+                <div>
+                    <img src="./images/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="objetivos seccion">
+                <h3>Objetivos</h3>
+                <div>
+                    <p>Crear el juego con el motor grafico en el tiempo establecido por el profesor.</p>
+                    <p>Administrar de forma adecuada el equipo de desarrollo animacion de personajes, fondos y decoración ambiental del juego, programacion etc...</p>
+                    <p>Publicar el juego en paginas de distribucion digital como itch.io entre otros al nombre de nuestra desarrolladora MMDJ.STUDIOS</p>
+                </div>
+                <div>
+                    <img src="./images/img2.jpg" alt="">
+                </div>
+            </div>
+            <div class="caracteristicas seccion">
+                <h3>Caracteristicas</h3>
+                <div>
+                    <p>El juego esta basado en una epoca medieval en la cual se utiliza la alquimia, y cuenta con enemigos magicos y humanoides que buscan causar mucho daño a nuestro protagonista</p>
+                    <div>
+                        <img src="./images/logo.jpg" alt="">
+                    </div>
+                    <p>Nos inspiramos mayormente en el juego de soul knihgt el cual contiene mecanicas muy utiles y que quisimos recrear a nuestro modo, aunque no sea un proyecto muy profesional hicimos lo posible para mostrar lo que una persona puede llegar a hacer con todo lo que brinda la tecnologia</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="integrantes">INTEGRANTES</h3>
+            <div class="integrantes__op">
+                <div class="image4">
+                    <h4>Jhony Alejandro David</h4>
+                    <img src="./images/Jhony.jpg" alt="">
+                </div>
+                <div class="image5">
+                    <h4>Matias Arias Uribe</h4>
+                    <img src="./images/Matias.jpg" alt="">
+                </div>
+                <div class="image6">
+                    <h4>Daniel Sneider Garces Manco</h4>
+                    <img src="./images/Daniel.jpg" alt="">
+                </div>
+                <div class="image7">
+                    <h4>Miguel Angel Montoya Cardona</h4>
+                    <img src="./images/Miguel.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
